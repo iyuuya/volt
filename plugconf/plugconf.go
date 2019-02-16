@@ -687,11 +687,11 @@ endfunction
 		buf.WriteString("\n\n")
 		if vimrcPath != "" {
 			vimrcPath = strings.Replace(vimrcPath, "'", "''", -1)
-			buf.WriteString("let $MYVIMRC = '" + vimrcPath + "'")
+			buf.WriteString("let $MYVIMRC = '" + vimrcPath + "'\n")
 		}
 		if gvimrcPath != "" {
 			gvimrcPath = strings.Replace(gvimrcPath, "'", "''", -1)
-			buf.WriteString("let $MYGVIMRC = '" + gvimrcPath + "'")
+			buf.WriteString("let $MYGVIMRC = '" + gvimrcPath + "'\n")
 		}
 	}
 
